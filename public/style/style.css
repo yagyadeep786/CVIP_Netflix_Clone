@@ -23,7 +23,7 @@ header{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(45deg,rgba(19, 18, 18, 0.24),rgba(0, 0, 0, 0.966)), url("/public/images/netfliximg.png");
+    background: linear-gradient(45deg,rgba(19, 18, 18, 0.24),rgba(0, 0, 0, 0.966)), url("../images/netfliximg.png");
     border-bottom: 10px solid rgb(53, 52, 52);
 }
 nav{
@@ -44,7 +44,7 @@ nav{
     gap: .5rem;
 }
 
-.nav_right label{
+.lab{
     display: inherit;
     align-items: center;
     gap: 3px;
@@ -55,7 +55,7 @@ nav{
      font-family: 'Heebo', sans-serif;
      font-weight: 600;
 }
-.nav_right label select{
+.lab select{
     background-color: transparent;
     color: whitesmoke;
     outline:none;
@@ -65,7 +65,7 @@ nav{
      font-size: 1rem;
 }
 
-.nav_right label select option{
+.lab select option{
     padding: .4rem 1rem;
     width: 2rem;
     color: black;
@@ -187,9 +187,86 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
+    padding: 2rem;
+    border-bottom: 10px solid rgb(53, 52, 52);
 }
 .faq{
-    display: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.ques{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.show{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background-color: rgb(65, 63, 63);
+  border-radius: 5px;
+  color: whitesmoke;
+  font-family: 'Heebo', sans-serif;
+  transition: all .2s ease-in;
+  margin-top: 5px;
+}
+.show h3,.show span{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.show:hover{
+    background-color: rgb(83, 82, 82);
+    cursor: pointer;
+}
+
+.ans{
+  padding: 1rem 1rem;
+  background-color: rgb(65, 63, 63);
+  border-radius: 5px;
+  color: whitesmoke;
+  font-family: 'Heebo', sans-serif;
+  transition: all 1s ease-in;
+  font-size: 1.5rem;
+  font-weight: 100;
+  outline: 2px solid black;
+  display: none;
+}
+.mar{
+    margin-top: 3rem;
+}
+
+/* // footer section  */
+
+.footer{
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
+    background-color: black;
+    padding: 2rem 5rem;
+    border-bottom: 10px solid rgb(53, 52, 52);
+    color: rgb(150, 147, 147);
+}
+.footer a{
+    color: rgb(182, 175, 175);
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+}
+
+.lists{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
