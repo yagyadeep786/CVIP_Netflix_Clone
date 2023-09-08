@@ -19,6 +19,12 @@ font-family: 'Titillium Web', sans-serif; */
 :root{
     --red:#e50914;
 }
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-bottom: 10px solid rgb(53, 52, 52);
+}
 header{
     display: flex;
     flex-direction: column;
